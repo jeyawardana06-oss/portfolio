@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jeyawardana | Mechatronics Engineer</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+html{ scroll-behavior:smooth; }
+
+body{
+  background:#000;
+  color:#fff;
+}
+
+/* NAVBAR */
+nav{
+  position:sticky;
+  top:0;
+  background:#000;
+  padding:15px 10%;
+  border-bottom:1px solid #1f1f1f;
+  z-index:1000;
+}
+
+nav span{
+  color:#ff2e2e;
+  font-weight:600;
+  text-shadow:0 0 12px rgba(255,46,46,0.8);
+}
+
+/* HEADER */
+header{
+  padding:70px 10%;
+}
+
+/* NAME GLOW */
+.header-text h1{
+  font-size:44px;
+  color:#ff2e2e;
+  animation:pulse 3s infinite;
+}
+
+@keyframes pulse{
+  0%{ text-shadow:0 0 8px rgba(255,46,46,0.6); }
+  50%{
+    text-shadow:
+      0 0 18px rgba(255,46,46,0.9),
+      0 0 36px rgba(255,46,46,0.6);
+  }
+  100%{ text-shadow:0 0 8px rgba(255,46,46,0.6); }
+}
+
+.header-text h3{
+  margin-top:12px;
+  font-weight:400;
+  color:#fff;
+}
+
+/* SECTIONS */
+section{
+  padding:65px 10%;
+  opacity:0;
+  transform:translateY(40px);
+  transition:0.8s ease;
+}
+
+section.show{
+  opacity:1;
+  transform:translateY(0);
+}
+
+/* SECTION TITLES */
+section h2{
+  font-size:28px;
+  margin-bottom:18px;
+  color:#ff2e2e;
+  text-shadow:
+    0 0 8px rgba(255,46,46,0.7),
+    0 0 16px rgba(255,46,46,0.5),
+    0 0 30px rgba(255,46,46,0.4);
+}
+
+/* TEXT */
+p{
+  line-height:1.8;
+  max-width:950px;
+  color:#e6e6e6;
+}
+
+/* GRID */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:25px;
+  margin-top:20px;
+}
+
+/* CARD */
+.card{
+  background:#0f0f0f;
+  padding:22px;
+  border-radius:16px;
+  border:1px solid #1f1f1f;
+  box-shadow:0 0 18px rgba(255,255,255,0.05);
+}
+
+/* CONTACT */
+.contact a{
+  color:#fff;
+  text-decoration:none;
+}
+
+.contact a:hover{
+  color:#ff2e2e;
+  text-shadow:0 0 10px rgba(255,46,46,0.8);
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:30px;
+  color:#aaa;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+  header{ text-align:center; }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <span>Jeyawardana</span>
+</nav>
+
+<header>
+  <div class="header-text">
+    <h1>Jeyawardana</h1>
+    <h3>Mechatronics Engineering Student</h3>
+  </div>
+</header>
+
+<section>
+  <h2>About Me</h2>
+  <p>
+    I am a dedicated Mechatronics Engineering student with a strong foundation in mechanical,
+    electrical, and automation systems. I have a keen interest in industrial automation,
+    PLC-based control systems, robotics, and smart manufacturing technologies. I actively
+    focus on applying theoretical knowledge through hands-on projects and real-world
+    engineering problem solving.
+  </p>
+</section>
+
+<section>
+  <h2>Education</h2>
+  <p><b>Bachelor of Engineering – Mechatronics Engineering</b></p>
+  <p>Kumaraguru College of Technology, Coimbatore (2023 – 2027)</p>
+  <p>CGPA: <b>7.56</b></p>
+</section>
+
+<section>
+  <h2>Technical Skills</h2>
+  <div class="grid">
+    <div class="card">
+      <b>Industrial Automation</b>
+      <p>PLC ladder logic, automation sequencing, sensors and actuators integration.</p>
+    </div>
+    <div class="card">
+      <b>Embedded Systems</b>
+      <p>Arduino programming, LED control, basic IoT integration and testing.</p>
+    </div>
+    <div class="card">
+      <b>Design & CAD</b>
+      <p>AutoCAD, SolidWorks, Fusion 360 for mechanical design and modeling.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Internship</h2>
+  <div class="card">
+    <p><b>Mindineous – Internship (4 Months)</b></p>
+    <p>
+      Gained hands-on experience in IoT and robotics-based applications. Worked on sensor
+      interfacing, automation logic development, and system testing. Collaborated with team
+      members to understand real-world industrial workflows and project execution methods.
+    </p>
+  </div>
+</section>
+
+<section>
+  <h2>Projects</h2>
+  <div class="grid">
+    <div class="card">
+      <b>PLC Automation – Vending Machine</b>
+      <p>
+        Designed PLC ladder logic to automate vending operations including product selection,
+        dispensing mechanism, and control sequencing.
+      </p>
+    </div>
+    <div class="card">
+      <b>LED Automation Project</b>
+      <p>
+        Developed an embedded system to control LED operation using programmed logic and
+        automation principles.
+      </p>
+    </div>
+    <div class="card">
+      <b>Cutting Design Project</b>
+      <p>
+        Created mechanical cutting designs using CAD tools focusing on precision,
+        manufacturability, and functional efficiency.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Certifications</h2>
+  <div class="card">
+    <p>• IoT and Robotics</p>
+    <p>• Human Rights</p>
+    <p>• RTI Act (Right to Information)</p>
+  </div>
+</section>
+
+<section>
+  <h2>Languages Known</h2>
+  <p>English, Tamil</p>
+</section>
+
+<section class="contact">
+  <h2>Contact</h2>
+  <p>📧 Email: <a href="mailto:jeyawardana06@gmail.com">jeyawardana06@gmail.com</a></p>
+  <p>📞 Phone: 8248403664</p>
+  <p>🔗 LinkedIn: <a href="https://www.linkedin.com/in/jeyawardana-t-269b64378" target="_blank">View Profile</a></p>
+  <p>💻 GitHub: <a href="https://github.com/jeyawardana06-oss" target="_blank">View Repositories</a></p>
+</section>
+
+<footer>
+  © 2026 Jeyawardana | Portfolio
+</footer>
+
+<script>
+const sections=document.querySelectorAll("section");
+window.addEventListener("scroll",()=>{
+  sections.forEach(sec=>{
+    if(sec.getBoundingClientRect().top < window.innerHeight-100){
+      sec.classList.add("show");
+    }
+  });
+});
+</script>
+
+</body>
+</html>
